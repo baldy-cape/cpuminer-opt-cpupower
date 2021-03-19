@@ -7,6 +7,6 @@ Ready to go mining YENTEN
     $ docker logs mining
 
 ## Worker Name
-To name the worked after the system hostname
+To name the worker after the system hostname
  
     $ docker run -d -h$HOSTNAME --name mining cpuminer-opt-cpupower
