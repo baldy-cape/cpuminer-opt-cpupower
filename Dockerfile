@@ -6,4 +6,5 @@ RUN git clone https://github.com/cpu-pool/cpuminer-opt-cpupower.git
 RUN chmod +x /cpuminer-opt-cpupower/build.sh
 RUN cd cpuminer-opt-cpupower/ && ./build.sh
 
-CMD /cpuminer-opt-cpupower/cpuminer -a yespowerr16 -ostratum+tcp://cpu-pool.com:63368 -uYd1SuvGoN3HVLDW8t7AEbfJN7r1XhMJgFC.$HOSTNAME --no-color -q 
+#CMD /cpuminer-opt-cpupower/cpuminer -a yespowerr16 -ostratum+tcp://cpu-pool.com:63368 -uYd1SuvGoN3HVLDW8t7AEbfJN7r1XhMJgFC.$HOSTNAME --no-color -q 
+CMD /cpuminer-opt-cpupower/cpuminer -a cpupower -o stratum+tcp://cpu-pool.com:63388 -u -usugar1qxtsm32sw54f6gasdhw6hy9g0jk60mdhmenv3wx.$HOSTNAME --no-color -q
