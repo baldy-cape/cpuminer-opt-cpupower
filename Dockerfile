@@ -8,5 +8,5 @@ RUN cd cpuminer-opt-cpupower/ && ./build.sh
 
 #CMD /cpuminer-opt-cpupower/cpuminer -a yespowerr16 -ostratum+tcp://cpu-pool.com:63368 -uYd1SuvGoN3HVLDW8t7AEbfJN7r1XhMJgFC.$HOSTNAME --no-color -q 
 #CMD /cpuminer-opt-cpupower/cpuminer -a yespowersugar -o stratum+tcp://cpu-pool.com:63418 -u sugar1qxtsm32sw54f6gasdhw6hy9g0jk60mdhmenv3wx.$HOSTNAME --no-color -q
-CMD /cpuminer-opt-cpupower/cpuminer -a yescrypt -o stratum+tcp://yescrypt.eu.mine.zpool.ca:6233 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p c=BTC --no-color -q
+CMD /cpuminer-opt-cpupower/cpuminer -a yescrypt -o stratum+tcp://yescrypt.eu.mine.zpool.ca:6233 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,c=BTC --no-color -q
 
