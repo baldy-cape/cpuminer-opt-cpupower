@@ -12,7 +12,7 @@ RUN cd cpuminer-opt-cpupower/ && ./build.sh
 
 CMD while true; \
 do\
- cpuminer-opt-cpupower/cpuminer  -r 0 -a allium -o stratum+tcp://.eu.mine.zpool.ca:6433 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,allium,argon2d4096,argon2d500,blake2s,blakecoin,cpupower,groestl,hmq1725,keccak,lbry,lyra2z,lyra2z330,m7m,yespowerR16,scrypt,c=BTC --no-color;\
+ cpuminer-opt-cpupower/cpuminer  -r 0 -a allium -o stratum+tcp://allium.eu.mine.zpool.ca:6433 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,allium,argon2d4096,argon2d500,blake2s,blakecoin,cpupower,groestl,hmq1725,keccak,lbry,lyra2z,lyra2z330,m7m,yespowerR16,scrypt,c=BTC --no-color;\
  cpuminer-opt-cpupower/cpuminer  -r 0 -a argon2d4096 -o stratum+tcp://argon2d4096.eu.mine.zpool.ca:4240 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,allium,argon2d4096,argon2d500,blake2s,blakecoin,cpupower,groestl,hmq1725,keccak,lbry,lyra2z,lyra2z330,m7m,yespowerR16,scrypt,c=BTC --no-color;\
  cpuminer-opt-cpupower/cpuminer  -r 0 -a argon2d500 -o stratum+tcp://argon2d500.eu.mine.zpool.ca:4239 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,allium,argon2d4096,argon2d500,blake2s,blakecoin,cpupower,groestl,hmq1725,keccak,lbry,lyra2z,lyra2z330,m7m,yespowerR16,scrypt,c=BTC --no-color;\
  cpuminer-opt-cpupower/cpuminer  -r 0 -a blake2s -o stratum+tcp://blake2s.eu.mine.zpool.ca:5766 -u bc1qqka5csar9388nvzw3hhj49ec9uks8p5a3s4s8q -p $HOSTNAME,allium,argon2d4096,argon2d500,blake2s,blakecoin,cpupower,groestl,hmq1725,keccak,lbry,lyra2z,lyra2z330,m7m,yespowerR16,scrypt,c=BTC --no-color;\
